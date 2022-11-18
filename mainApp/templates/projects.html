@@ -1,0 +1,45 @@
+{% extends "dashboard.html" %}
+{% block title %}
+<title>Task | Projects</title>
+{% endblock title %}
+
+{% block content %}
+		<div class="col-md-10 col-12" style="background-color:  #e0e0d1">
+			<h1>Projects</h1>
+			<div class="container" style="text-align: center;">
+  <div class="row ">
+    <div class="col-sm ">
+    	<p class="btn blu">
+      Total Projects<br>
+      {{key}}
+    </p><br>
+    </div>
+    <div class="col-sm">
+    	<p class="btn yel">
+      Pending Projects<br>
+      {{pend}}
+    </p>
+    </div>
+    <div class="col-sm">
+    	    	<p class="btn gren">
+      Ongoing Projects<br>
+      {{Ongoing}}
+</p>
+    </div>
+    <div class="col-sm">
+        	<p  class="btn raid">
+
+      Complete Projects<br>
+      {{Complete}}
+</p>
+    </div>
+        <div class="col-sm">
+        	<a href="/CreateProject/" class="btn bluy">
+      Create New Project
+</a>
+    </div>
+  </div>
+</div>
+		</div>
+
+{% endblock content %}

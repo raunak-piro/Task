@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	<title>Task | Project Details</title>
+
+</head>
+<body>
+
+<div class="container " style="width: 200vw;text-align: center; ">
+    <div class="row " style="width: 50%; margin-left: 250px; ">
+<form>
+<h1>Project Details</h1>
+	<table border="1" style="" class="table">
+		<tr>
+		<th>Project Id</th>
+		<th>Project Title</th>
+		<th>Department</th>
+		<th>Priority</th>
+		<th>Client</th>
+		<th>From Date</th>
+		<th>To Date</th>
+		<th>Work Status</th>
+		
+		
+		</tr>
+			{% for i in key %}
+		<tr>
+			<td>{{i.project_id}}</td>
+			<td>{{i.project_title}}</td>
+			<td>{{i.department}}</td>
+			<td>{{i.priority}}</td>
+			<td>{{i.client}}</td>
+			<td>{{i.From_Date}}</td>
+			<td>{{i.To_Date}}</td>
+			<td>{{i.work_status}}</td>
+		</tr>
+			{% endfor %}
+	</table>
+
+</form>
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+</body>
+</html>

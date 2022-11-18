@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+}
+.background{
+	background-color: grey;
+	width: 15vw;
+	text-align: center;
+}
+#anc{
+	text-decoration: none;
+}
+.blu{
+	background-color:  #99bbff;
+	
+}
+.yel{
+	background-color:  #ffff99;
+	
+}
+.gren{
+	background-color:  #80ff80;
+	
+}
+.raid{
+	background-color:  #ff4d4d;
+	
+}
+.bluy{
+	background-color: navy;
+	color: white;
+}

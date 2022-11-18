@@ -1,0 +1,33 @@
+{% extends "dashboard.html" %}
+{% block title %}
+<title>Task | Projects</title>
+{% endblock title %}
+
+{% block content %}
+		<div class="col-md-10 col-12" style="background-color:  #e0e0d1">
+			<h1>Client Details</h1>
+			<div class="container">
+  <div class="row " style="text-align: center;">
+    <div class="col-sm ">
+    	<p class="btn btn-primary">
+      Total Clients <br>
+      {{total}}
+      </p>
+      </div>
+    <div class="col-sm">
+        	<p  class="btn btn-primary">
+          Current Clients<br>
+          {{total}}
+          </p>
+
+    </div>
+        <div class="col-sm">
+        	<a href="/CreateClient/" class="btn bluy">
+      Create New Client
+</a>
+    </div>
+  </div>
+</div>
+		</div>
+
+{% endblock content %}

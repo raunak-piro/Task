@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	<title>Task | New Project</title>
+</head>
+<body>
+
+<div class="container-fluid mt-3">
+    <div class="row my-5">
+        <div class="col-md-2 col-1"></div>
+        <div class="col-md-8 col-10">
+            <h5 class="background text-light text-center p-2">Create New Project</h5>
+            
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="row mb-3">
+                    <div class="col-md-6 col-12">
+                        <label class="form-label mt-2">Project ID</label>
+                        <input type="text" class="form-control" name="project_id" placeholder="1239922">
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <label class="form-label mt-2">Project Title</label>
+                        <input type="text" class="form-control" name="project_title" placeholder="Software Development">
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                    <label class="form-label mt-2">Department:</label>
+                       
+					<select name="department" id="Department" class="form-control">
+					<option value="Select Department" name="department">Select Department</option>
+					  <option value="Development Department" name="department">Development Department</option>
+					  <option value="Managers Department" name="department">Managers Department</option>
+					  <option value="Application Department" name="department">Application Department</option>
+					  <option value="Accounts Department" name="department">Accounts Department</option>
+					</select>
+                    </div>
+                    <div class="col-md-6 col-12 mt-2">
+                    <label class="form-label">Project Priority:</label>
+                       
+					<select name="priority" id="Priority" class="form-control">
+					  <option value="" name="priority">Select Priority</option>
+					  <option value="High" name="priority">High</option>
+					  <option value="Medium" name="priority">Medium</option>
+					  <option value="Low" name="priority">Low</option>
+					</select>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                    <label class="form-label mt-2">Client:</label>
+                       
+					<select name="client" id="Client" class="form-control">
+					  <option value="">Select Client</option>
+					  <option value="Client 01">Client 01</option>
+					  <option value="Client 02">Client 02</option>
+					  <option value="Client 03">Client 03</option>
+                      <option value="Client 04">Client 04</option>
+					</select>
+                    </div>
+
+                 <div class="col-md-6 col-12">
+                   
+
+				</div>
+
+
+                 <div class="col-md-3 col-12">
+                   <label class="form-label mt-2">From:</label>
+                    
+	            <input type="date" name="From_Date" class="form-control">
+					</div>
+
+                 <div class="col-md-3 col-12">
+                   <label class="form-label mt-2">To:</label>
+                    
+            <input type="date" name="To_Date" class="form-control">
+				</div>
+				 <div class="col-md-3 col-12">
+                </div>
+                 <div class="col-md-6 col-12">
+<label class="form-label mt-2"><h6> Work Status:</h6></label>
+                   
+<input type="radio" id="html" name="work_status" value="Complete">
+<label for="html">Complete</label>
+<input type="radio" id="css" name="work_status" value="Pending">
+<label for="css">Pending</label>
+<input type="radio" id="javascript" name="work_status" value="Ongoing">
+<label for="javascript">Progress</label>
+                </div>
+
+        	   <div class="col-md-6 col-12">
+				</div>
+
+        	  	<div class="col-md-6 col-12">
+
+                <button type="button" class="btn btn-danger  text-light  btn-sm mybtn" style="width: 10vw"> Close</button>
+				<button type="submit" class="btn btn-primary text-light  btn-sm mybtn" style="width: 10vw">Submit</button>
+				
+				</div>
+</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
